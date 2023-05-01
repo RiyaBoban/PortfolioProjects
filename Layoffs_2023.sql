@@ -78,6 +78,17 @@ FROM [Portfolio Project].[dbo].[layoffs_2023]
 GROUP BY DATEPART(YEAR,date)
 ORDER BY year
 
+-----Top 3 Locations where most layoffs happened year-wise
+
+SELECT location, layoffs_number, year,rank
+FROM (SELECT location, SUM(CAST(total_laid_off AS FLOAT)) AS layoffs_number, DATEPART(YEAR,date) as year, 
+ROW_NUMBER() OVER(PARTITION BY DATEPART(YEAR,date)  ORDER BY  SUM(CAST(total_laid_off AS FLOAT)) DESC ) AS rank
+FROM [Portfolio Project].[dbo].[layoffs_2023]
+GROUP BY location,DATEPART(YEAR,date)
+) AS location
+WHERE rank <=3
+ORDER BY rank,year
+
 -----Top 10 Industries with maximum  layoffs
 
 SELECT TOP 10 Industry, SUM(CAST(total_laid_off AS FLOAT)) AS layoffs_number
