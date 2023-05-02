@@ -40,3 +40,7 @@ In India, Byjus,Swiggy and Ola at Banglore City in India went through greater ra
 
 The three top cities that had topped in layoffs in India are Banglore,Mumbai and Gurugaon.
 
+DATA SOURCE
+Web Page:https://www.kaggle.com/datasets/swaptr/layoffs-2022?datasetId=2626311 
+
+
