@@ -32,7 +32,7 @@ As of now maximum layoffs happened in the year 2023 compared to 2020,2021,2022.
 
 After layoffs, Netflix, Wework and Uber raised maximum fund.
 
-At IPO,Series B and C stages of the company have maximum layoffs
+At IPO,Series B and C stages of the company have maximum layoffs.
 
 In USA, SF Bay Area,Seattle and New York are the cities which faced higher number of layoffs.
 
