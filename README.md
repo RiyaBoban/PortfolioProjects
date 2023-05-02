@@ -16,4 +16,27 @@ Replaced null values in date column.
 
 Altered Data type of total_laid_off column.
 
+After Data Exploration with SQL, I started working on Analysing the Data with SQL where I found insights such as...
+
+Amazon,Meta and Google have maximum number of layoffs.
+
+USA has over 68% layoffs followed by India with 9% and Netherlands with 4%. At USA, Consumer industry has high layoffs whereas in India education field and healthcare in Netherlands.
+
+In USA, a total of 1356 companies were laid off, in India-154 and in Canada-97 companies.
+
+Overall companies in finance,retail and healthcare industry have high layoffs.
+
+Layoffs are mostly higher in the months of January,november and march.
+
+As of now maximum layoffs happened in the year 2023 compared to 2020,2021,2022.
+
+After layoffs, Netflix, Wework and Uber raised maximum fund.
+
+At IPO,Series B and C stages of the company have maximum layoffs
+
+In USA, SF Bay Area,Seattle and New York are the cities which faced higher number of layoffs.
+
+In India, Byjus,Swiggy and Ola at Banglore City in India went through greater rank of layoffs.
+
+The three top cities that had topped in layoffs in India are Banglore,Mumbai and Gurugaon.
 
