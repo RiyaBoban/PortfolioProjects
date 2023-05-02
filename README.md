@@ -6,10 +6,14 @@ Layoffs Dataset contains more than 2000 rows with colums such as company,locatio
 
 While Exploring Data with SQL, I was working on the following things...
 
-Checked all the details of table such column name, data types and constraints
+Checked all the details of table such column name, data types and constraints.
+
 Checked for duplicate values in table and deleted those rows.
+
 Removed unwanted rows from table.
+
 Replaced null values in date column.
+
 Altered Data type of total_laid_off column.
 
 
