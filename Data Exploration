@@ -22,6 +22,14 @@ WHERE Duplicate_count>1;
 DELETE FROM layoffs_2023 
 WHERE total_laid_off = ' ' AND percentage_laid_off = ' ';
 
+---- Find data type of columns
+
+SELECT 
+COLUMN_NAME, 
+DATA_TYPE 
+FROM INFORMATION_SCHEMA.COLUMNS
+where TABLE_NAME = 'ZomatoData1'
+
 ----- Change Datatype of total_laid_off column
 
 ALTER TABLE [Portfolio Project].[dbo].[layoffs_2023] 
