@@ -26,3 +26,10 @@ WHERE total_laid_off = ' ' AND percentage_laid_off = ' ';
 
 ALTER TABLE [Portfolio Project].[dbo].[layoffs_2023] 
 ALTER COLUMN [total_laid_off] FLOAT
+
+
+-----Update blank date
+
+UPDATE [Portfolio Project].[dbo].[layoffs_2023]
+SET  date = '2023-02-23' 
+WHERE company = 'blackbaud'
