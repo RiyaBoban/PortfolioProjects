@@ -1,0 +1,56 @@
+----Find Datatype
+
+SELECT 
+COLUMN_NAME, 
+DATA_TYPE 
+FROM INFORMATION_SCHEMA.COLUMNS
+where TABLE_NAME = 'Zomato_Dataset'
+
+
+-----Find Duplicates
+
+SELECT *, COUNT(*)
+FROM [Portfolio Project].[dbo].[Zomato_Dataset.]
+GROUP BY column1,RestaurantName,CountryCode,City,Address,Locality,LocalityVerbose,Cuisines,Currency,Has_Table_booking,Has_Online_delivery,Is_delivering_now,Switch_to_order_menu,Votes,Average_Cost_for_two,Rating
+HAVING COUNT(*)>1
+
+-----Delete unwanted Columns
+
+ALTER TABLE [Portfolio Project].[dbo].[Zomato_Dataset.]
+DROP COLUMN Adress Locality, LocalityVerbose
+
+----- Replace symbols in words with letter
+
+SELECT City
+FROM [Portfolio Project].[dbo].[Zomato_Dataset.]
+WHERE city LIKE '%?%'
+UPDATE [Portfolio Project].[dbo].[Zomato_Dataset.]
+SET City = REPLACE(CITY,'?','i')
+
+SELECT RestaurantName
+FROM [Portfolio Project].[dbo].[Zomato_Dataset.]
+WHERE RestaurantName LIKE '%?%'
+UPDATE [Portfolio Project].[dbo].[Zomato_Dataset.]
+SET RestaurantName = REPLACE(RestaurantName,'?','e')
+
+---- Add Country column From country table
+
+SELECT A.CountryCode,B.Country
+FROM [Portfolio Project].[dbo].[Zomato_Dataset.] A 
+JOIN Country B
+ON A.CountryCode = B.countrycode
+
+ALTER TABLE [Portfolio Project].[dbo].[Zomato_Dataset.] 
+ADD COUNTRY_NAME VARCHAR(50)
+
+UPDATE [Portfolio Project].[dbo].[Zomato_Dataset.]
+SET COUNTRY_NAME = B.COUNTRY								
+FROM [Portfolio Project].[dbo].[Zomato_Dataset.] A 
+JOIN Country B
+ON A.CountryCode = B.COUNTRYCODE
+
+----Rows with NULL values in Cuisines column
+
+SELECT *
+FROM [Portfolio Project].[dbo].[Zomato_Dataset.]
+WHERE Cuisines IS NULL
