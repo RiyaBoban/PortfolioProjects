@@ -8,39 +8,41 @@ Layoffs Dataset contains more than 2000 rows with columns such as company,locati
 While Exploring Data with SQL, I was working on the following things...
 
 
-Checked all the details of table such as column name, data types and constraints.
+1.Checked all the details of table such as column name, data types and constraints.
 
-Checked for duplicate values in table and deleted those rows.
+2.Checked for duplicate values in table and deleted those rows.
 
-Removed unwanted rows from table.
+3.Removed unwanted rows from table.
 
-Replaced null values in date column.
+4.Replaced null values in date column.
 
-Altered Data type of total_laid_off column.
+5.Altered Data type of total_laid_off column.
 
 After Data Exploration with SQL, I started working on Analysing the Data with SQL where I found insights such as...
 
-Amazon,Meta and Google have maximum number of layoffs.
+1.Amazon,Meta and Google have maximum number of layoffs.
 
-USA has over 68% layoffs followed by India with 9% and Netherlands with 4%. At USA, Consumer industry has high layoffs whereas in India education field and healthcare in Netherlands.
+2.USA has over 68% layoffs followed by India with 9% and Netherlands with 4%. 
 
-In USA, a total of 1356 companies had layoffs, in India 154 and in Canada 97 companies.
+3.At USA, Consumer industry has high layoffs whereas in India education field and healthcare in Netherlands.
 
-Overall, companies in finance,retail and healthcare industry have high layoffs.
+4.In USA, a total of 1356 companies had layoffs, in India 154 and in Canada 97 companies.
 
-Layoffs are mostly higher in the months of January,november and march.
+5.Overall, companies in finance,retail and healthcare industry have high layoffs.
 
-As of now maximum layoffs happened in the year 2023 compared to 2020,2021,2022.
+6.Layoffs are mostly higher in the months of January,november and march.
 
-After layoffs, Netflix, Wework and Uber raised maximum fund.
+7.As of now maximum layoffs happened in the year 2023 compared to 2020,2021,2022.
 
-At IPO,Series B and C stages of the company have maximum layoffs.
+8.After layoffs, Netflix, Wework and Uber raised maximum fund.
 
-In USA, SF Bay Area,Seattle and New York cities faced higher number of layoffs.
+9.At IPO,Series B and C stages of the company have maximum layoffs.
 
-In India, Byjus,Swiggy and Ola at Banglore City went through greater rank of layoffs.
+10.In USA, SF Bay Area,Seattle and New York cities faced higher number of layoffs.
 
-The three top cities that had topped in layoffs in India are Banglore,Mumbai and Gurugaon.
+11.In India, Byjus,Swiggy and Ola at Banglore City went through greater rank of layoffs.
+
+12.The three top cities that had topped in layoffs in India are Banglore,Mumbai and Gurugaon.
 
 DATA SOURCE
 Web Page:https://www.kaggle.com/datasets/swaptr/layoffs-2022?datasetId=2626311 
