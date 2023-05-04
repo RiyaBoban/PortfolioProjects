@@ -75,3 +75,16 @@ UPDATE [Portfolio Project].[dbo].[Zomato_Datasets]
 SET Has_Table_booking = REPLACE (Has_Table_booking,'1','Yes')
 UPDATE [Portfolio Project].[dbo].[Zomato_Datasets]
 SET Has_Table_booking = REPLACE(Has_Table_booking,'0','No')
+
+----Add new Column Rate Category based on the Rating
+
+ALTER TABLE [Portfolio Project].[dbo].[Zomato_Datasets] 
+ADD  Rate_Category VARCHAR(20)
+
+UPDATE [Portfolio Project].[dbo].[Zomato_Datasets] 
+SET Rate_Category =
+(CASE WHEN rating >=4.0 THEN 'Excellent'
+      WHEN rating >= 3.5 AND rating < 4.0 THEN 'Good'
+	  WHEN rating >= 2.5 AND rating < 3.5 THEN 'Average'
+	  WHEN rating < 2.5 THEN 'Poor' END)
+
