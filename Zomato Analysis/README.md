@@ -6,10 +6,17 @@ Zomato Dataset consist of more than 9000 rows with columns such as Restaurants_i
 
 **While Exploring Data with SQL, I was working on the following things...**
 
-1.Checked all the details of table such column name, data types and constraints
-2.Checked for duplicate values in [RestaurantId] column
-3.Removed unwanted columns from table
-4.Merged 2 differnt tables and added the new column of Country_Name with the help of primary key as [CountryCode] column
-5.Identitfied and corrected the mis-spelled city names
-6.Created new category column for rating
+1.Checked all the details of table such as column name, data types and constraints.
+
+2.Checked for duplicate values in [RestaurantId] column.
+
+3.Removed unwanted columns from table.
+
+4.Merged 2 differnt tables and added the new column of Country_Name with the help of primary key as [CountryCode] column.
+
+5.Identitfied and corrected the mis-spelled city names.
+
+6.Created new category column for rating.
+
+7. Replaced values from 1 & 0 to yes & no in has_table_booking table.
 
