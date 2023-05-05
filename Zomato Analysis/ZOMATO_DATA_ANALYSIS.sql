@@ -31,12 +31,11 @@ FROM cte
 WHERE rank = 1
 ORDER BY rating DESC
 
------FINDING FROM WHICH CITY  IN INDIA WHERE THE MAX RESTAURANTS ARE LISTED IN ZOMATO
+----- Finding which city has maximum restaurants in Zomato
 
 WITH cte AS(
 SELECT DISTINCT city,COUNT(restaurantname) AS Restaurant_Count
 FROM [Portfolio Project].[dbo].[Zomato_Datasets]
-WHERE country_name = 'India'
 GROUP BY city)
 SELECT city, Restaurant_Count
 FROM cte
