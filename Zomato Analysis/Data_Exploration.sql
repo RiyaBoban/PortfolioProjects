@@ -87,3 +87,8 @@ SET Rate_Category =
 	  WHEN rating >= 2.5 AND rating < 3.5 THEN 'Average'
 	  WHEN rating < 2.5 THEN 'Poor' END)
 
+-----Rolling/Moving count of Restaurants in different cities of a country
+
+SELECT city,Country_name, SUM(COUNT(Restaurantname)) OVER(PARTITION BY country_name ORDER BY COUNT(Restaurantname))AS Restaurant_Count 
+FROM [Portfolio Project].[dbo].[Zomato_Datasets]
+GROUP BY Country_name,city
