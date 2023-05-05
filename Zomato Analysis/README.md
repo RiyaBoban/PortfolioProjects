@@ -24,7 +24,16 @@ Zomato Dataset consist of more than 9000 rows with columns such as Restaurants_i
 
 **After Data Exploration with SQL, I started working on Analysing the Data with SQL where I found insights such as...**
 
-1. 
+1. According to the Zomato Dataset, 90.67% of data is related to restaurants listed in India followed by USA(4.45%).
+2. Only India and UAE provide online delivery of which only 27% of Indian and 0.3% of UAE restaurants provides.
+3. Learned most popular restaurants in each city, 
+4. In Zomato dataset maximum restaurants are found in New Delhi, India.
+5. Average Ratings for restaurants with table booking facility is 3.4/5 compared to restaurants without table booking facility is 2.7/5 in India.
+6. 435 restaurants in Zomato has both table bookings and online delivery.
+7. Figured out famous cuisines in each country.
+8. Listed out renowned restaurants in each city that also falls in Excellent rate category.
+9. The number of restaurants that fall in Excellent category are higher than other rating category in all countries except for India, Australia and Singapore. 
+10. In India,as the average cost of two reduces to <500 the rating decreases and falls in poor category.
 
 
 
