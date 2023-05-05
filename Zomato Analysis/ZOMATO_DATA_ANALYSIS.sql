@@ -112,6 +112,16 @@ WHERE Rank =1
  FROM cte
  GROUP BY COUNTRY_NAME
  ORDER BY Excellent_Restaurants DESC
+ 
+  ----OR
+
+ SELECT Country_name, [Excellent] AS Excellent_Restaurants,[Good] AS Good_Restaurants,[Average] AS Average_Restaurants,[Poor] AS Poor_Restaurants
+ FROM 
+ (SELECT Country_name,rate_category
+ FROM [Portfolio Project].[dbo].[Zomato_Datasets]) AS Zomato
+ PIVOT(
+ COUNT(rate_category) FOR rate_category IN ([Excellent],[Good],[Average],[Poor]))AS Pivottable
+ORDER BY Excellent_Restaurants DESC
 
 
  ----Does Average Cost for two affects rating in India
