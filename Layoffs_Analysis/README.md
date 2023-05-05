@@ -44,7 +44,8 @@ Layoffs Dataset contains more than 2000 rows with columns such as company,locati
 
 12.The three top cities that had topped in layoffs in India are Banglore,Mumbai and Gurugaon.
 
-DATA SOURCE
+**DATA SOURCE**
+
 Web Page:https://www.kaggle.com/datasets/swaptr/layoffs-2022?datasetId=2626311 
 
 
