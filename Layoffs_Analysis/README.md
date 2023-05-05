@@ -1,11 +1,11 @@
 
-Data Analysis Project: LayOffs Dataset
+**Data Analysis Project: LayOffs Dataset
 
 Many employees are facing layoffs every year. This project gives an idea on which country,company and industry face maximum layoffs.
 Layoffs Dataset contains more than 2000 rows with columns such as company,location, industry, total_laid_off,percentage_laid_off,date,stage, country, and funds_raised.
 
 
-While Exploring Data with SQL, I was working on the following things...
+**While Exploring Data with SQL, I was working on the following things...
 
 
 1.Checked all the details of table such as column name, data types and constraints.
@@ -18,7 +18,7 @@ While Exploring Data with SQL, I was working on the following things...
 
 5.Altered Data type of total_laid_off column.
 
-After Data Exploration with SQL, I started working on Analysing the Data with SQL where I found insights such as...
+**After Data Exploration with SQL, I started working on Analysing the Data with SQL where I found insights such as...
 
 1.Amazon,Meta and Google have maximum number of layoffs.
 
