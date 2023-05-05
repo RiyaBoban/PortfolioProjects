@@ -20,10 +20,12 @@ Zomato Dataset consist of more than 9000 rows with columns such as Restaurants_i
 5. Merged 2 differnt tables and added the new column of Country_Name with the help of primary key as [CountryCode] column
 6. Created new category column for rating.
 7. Replaced values from 1 & 0 to yes & no in has_table_booking table.
+8. Counted the no.of restaurants by rolling count/moving count.
 
 **After Data Exploration with SQL, I started working on Analysing the Data with SQL where I found insights such as...**
 
-1.
+1. 
+
 
 
 
