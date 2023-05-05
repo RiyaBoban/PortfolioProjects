@@ -1,12 +1,6 @@
 SELECT *
 FROM [Portfolio Project].[dbo].[Zomato_Datasets]
 
------Rolling/Moving count of Restaurants in different cities of a country
-
-SELECT city,Country_name, SUM(COUNT(Restaurantname)) OVER(PARTITION BY country_name ORDER BY COUNT(Restaurantname))AS Restaurant_Count 
-FROM [Portfolio Project].[dbo].[Zomato_Datasets]
-GROUP BY Country_name,city
-
 ----Percentage of Restaurants in each country
 
 SELECT DISTINCT Country_name, 
