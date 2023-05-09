@@ -61,13 +61,6 @@ FROM cte
 WHERE rank =1 AND layoffs_number !=0
 ORDER BY layoffs_number DESC;
 
------Rolling/Moving Count of Lay offs in India
-
-SELECT company,location,SUM( total_laid_off ) OVER(PARTITION BY location ORDER BY total_laid_off) AS Running_Total
-FROM [Portfolio Project].[dbo].[layoffs_2023]
-WHERE country = 'India' AND total_laid_off !=0
-ORDER BY location;
-
 -----Which month had maximum layoffs
 
 SELECT SUM(CAST(total_laid_off AS FLOAT)) AS layoffs_number,DATEPART(Month,date) as month
